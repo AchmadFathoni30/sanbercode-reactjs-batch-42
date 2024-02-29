@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav span{
+    width: 80%;
+    float: left;
+}
+
+.nav img{
+    border-radius: 50%;
+    width: 130px;
+    padding-bottom: 10px;
+    float: right;
+    margin: 5px;
+}
+
+/* Definelah ukuran container dibawah ini */
+.container-app{
+    max-width: 1080px;
+    margin: 20px auto;
+    background: #fff;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.headline img{
+    width: 100%;
+    height: 100px;
+    border-radius: 25px;
+} 
+
+.headline h1{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.headline p{
+    padding-bottom: 30px;
+}
+
+.text-type h3{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.blog-section{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-column-gap: 10px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    width: 100%;
+    float: right;
+    margin: 5px;
+    transition: 0.3s;
+
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 2);
+}
+
+.card img{
+    width: 100%;
+    margin: 0 -5px;
+}
+
+.body-card h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+
+.body-card p{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+/* Buatlah styling setiap section dibawah ini */
+
+.content__custom {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    position: relative;
+    animation-play-state: paused;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    white-space: nowrap;
+    z-index: 2;
+    animation: marquee 19s linear infinite;
+  }
+  
+  .content__custom:before,
+  .content__custom:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .content__custom:before {
+    left: 0;
+  }
+  
+  .content__custom:after {
+    right: 0;
+  }
+  
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+/* Buatlah breakpoint Resposnive design dibawah ini */
+
+@media only screen and (max-width: 780px) {
+    .blog-section{
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}

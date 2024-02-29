@@ -1,0 +1,28 @@
+.nav{
+    background-color: #2C3333;
+    width: 100%;
+    color: white;
+    padding: 10px 5px;
+}
+
+.nav img{
+    border-radius: 80%;
+    float: right;
+    width: 7%;
+    padding: 15px;
+}
+
+.img{
+    width: 100%;
+}
+
+.artikel{
+    padding: 10px;
+}
+
+.img-section{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #eee;
+    object-fit: cover;
+}
